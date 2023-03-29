@@ -9,3 +9,4 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+#Might continue from here, ask Joshua later to create a compatible file
