@@ -157,6 +157,24 @@
                         alert('Payment successful!');
                         location.reload();
                     } 
+
+                    /*
+
+                    200 and 4 refer to two different properties of the XMLHttpRequest (XHR) object.
+                    xhr.readyState:
+                    The readyState property of the XMLHttpRequest object holds the status of the request. It can have the following values:
+
+                    0: UNSENT - The XHR object has been created, but the open() method has not been called yet.
+                    1: OPENED - The open() method has been called.
+                    2: HEADERS_RECEIVED - The XHR object has received the response headers.
+                    3: LOADING - The XHR object is receiving the response body (progress reports are delivered intermittently as chunks of data).
+                    4: DONE - The entire response has been received and is available.
+                    ========================================================================================================
+                    xhr.status:
+                    The status property of the XMLHttpRequest object holds the HTTP status code returned by the server. 
+                    This value is usually a three-digit integer, such as 200, 404, or 500.
+
+                    */
                     
                     //The numbers 4 and 200 was adviced, I might need to change the numbers later 
                     else if (xhr.readyState === 4 && xhr.status !== 200) {
