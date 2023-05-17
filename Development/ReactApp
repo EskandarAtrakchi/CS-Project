@@ -1,0 +1,11 @@
+By @EskandarArakchi
+
+1.Install node.js from nodejs.org
+2.Create a folder called reacte 
+3. open terminal and run the following 
+-npx create-react-app (name of the project)
+-cd (name of the project)
+-npm start
+
+if it does not start then write localhost:3000 in the url
+it is usually opens on localhost:3000 
